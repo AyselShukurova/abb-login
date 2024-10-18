@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 40% 60%; /* Form on left, image on right */
+    width: 100%;
+    height: 100vh;
+}
+
+.form {
+    display: grid;
+    grid-template-rows: 100px 1fr 100px; /* Header, Main, Footer */
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+}
+
+.image {
+    background-image: url(image/image\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto; /* Logo on the left, language options on the right */
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main {
+    display: grid;
+    gap: 24px;
+    width: 80%;
+    justify-self: center;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 100%;
+    justify-content: space-between;
+    text-decoration: underline;
+    padding: 20px 50px;
+}
+
+.logo img {
+    width: 100px;
+    height: 40px;
+}
+
+.language {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 16px;
+    color: rgba(160, 174, 192, 1);
+    font-weight: 600; /* Fixed from '600px' */
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.active {
+    color: black;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 400; /* Fixed from '400px' */
+    line-height: 20px;
+    color: rgba(113, 128, 150, 1);
+}
+
+.title {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 8px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 600;
+    color: rgba(45, 55, 72, 1);
+}
+
+.kobil {
+    color: rgba(160, 174, 192, 1);
+}
+
+.mobilphone,
+.asanUserId {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.mobilphone input,
+.asanUserId input {
+    border: 1px solid rgba(203, 213, 224, 1);
+    border-radius: 6px;
+    width: 100%;
+    padding: 8px;
+}
+
+.mobilphone label,
+.asanUserId label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(45, 55, 72);
+}
+
+input:focus {
+    outline: none;
+}
+
+.continue {
+    background-color: rgba(203, 213, 224, 1);
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    border-radius: 6px;
+    padding: 8px;
+    border: 1px solid rgba(203, 213, 224, 1);
+}
+
+.or {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.register {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    border: 1px solid rgba(226, 232, 240, 1);
+    padding: 8px;
+    border-radius: 6px;
+}
